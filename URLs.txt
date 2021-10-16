@@ -1,0 +1,24 @@
+******for GET request:*******
+
+1- Getting all students, departments, or courses, 
+	EXAMPLE LINK: http://localhost:8182/department/ , http://localhost:8182/student/ , http://localhost:8182/course/
+
+2- Getting a specific student, department, or course by ID,
+ 	EXAMPLE LINK: http://localhost:8182/department/2 , http://localhost:8182/student/1 , http://localhost:8182/course/4  --->"get a course with id=4"
+
+******for POST request:********
+
+3- Adding a new student, department, or course,
+	EXAMPLE LINK: http://localhost:8182/department/newdepartment , http://localhost:8182/student/newstudent , http://localhost:8182/course/newcourse
+	THEN, select (body) --> (row)--> choose Json, and write the new details with "_" before the column name, ex: for course write: { "_id" : "9" , "_name" : "construction design"}
+
+******for PUT request:*********
+
+4-Adding new or Updating an existing student, department, or course Using ID
+	EXAMPLE LINK: http://localhost:8182/department/2 , http://localhost:8182/student/4 , http://localhost:8182/course/3 "update course name with id =3 if exists, if not, create a new one with this id."
+	*we should write the new details same as creating a new object*
+
+******for DELETE request:********
+
+5- Deleting an existing student, department, or course Using ID
+	EXAMPLE LINK: http://localhost:8182/department/2 , http://localhost:8182/student/4 , http://localhost:8182/course/3 

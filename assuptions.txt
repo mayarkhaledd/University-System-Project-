@@ -1,0 +1,14 @@
+Assumptions and corner cases handling:
+
+1)Assump:
+	-I assumed that the student has attributes (id,name,city), course has (id,name), department has (id,name).
+	-I implemented 3 entities/classes with their services to be tested (student,course,department).
+	-In my database i created 6 tables (students,course,department,doctor,course_offered,course_takenby) .
+	-I am using Phpmyadmin for database schema and XAMPP panel to run the server.
+	-The java application is running at port number 8182 as stated in application.properties file existed in the project directory, so the url will be as localhost8182.
+	-The REST services implemented are (GET, POST, PUT, DELETE).
+2)CC: 
+	*for GET requests, if the given id is not existed , the response is succeded with "200 ok" and returns an object with _name :"not existing" of this id.
+	*for POST request, if the new object already existed, the response is succeded with "200 ok" and no DB change.
+	*for PUT request, if the given id already exists, it updates the exiting object with this id and data, if not, a new object is inserted to the DB with this id and new data.
+	*for DELETE request, if the given id not exists, the response is succeded with "200 ok" and no DB change.

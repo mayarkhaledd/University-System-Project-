@@ -1,0 +1,8 @@
+1- Open XAMPP and run apache and MySQL servers
+2- Extract the compressed Uni_project folder and import it from eclipse then run UniProjectApplication.java as java application (it contains the main class to run the whole program).
+3- Click on admin button beside MySQL server button in XAMPP to access the database (PHPMyadmin) with local host.
+4- Open postman and choose the required request/service , then enter the suitable url (urls are given in a txt file)
+
+ ***Notes***
+	-MySQL server port number is 3306 , the same the port number written in the code to access the database.
+	-The java application is running on localhost 8182 as stated in application.properties file, so the urls are as : http://localhost8182... you can change it if you want from the file.
